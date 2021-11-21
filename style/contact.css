@@ -1,0 +1,181 @@
+.main {
+    display: grid;
+    grid-template-areas:
+        'h h h h h h h h h h h h'
+        'c c c c c c c c c c c c'
+        'o o o o o o o o o o o o'
+        'f f f f f f f f f f f f';
+    gap: 1%;
+}
+
+.header {
+    grid-area: h;
+    margin: 10px;
+    padding: 10px;
+}
+
+.cover-contact {
+    grid-area: c;
+}
+
+.form {
+    grid-area: o;
+}
+
+.footer {
+    grid-area: f;
+}
+
+.container {
+    width: 90%;
+    margin: 0px auto;
+}
+
+.footer {
+    width: 100%;
+    height: 100px;
+
+
+}
+
+/* start header */
+.main .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+}
+
+.main .header-Right {
+    display: flex;
+    align-items: center;
+}
+
+.main .header .header-Right {
+    width: auto;
+    height: 1rem;
+}
+
+.main .header .header-center ul li {
+    display: inline;
+    padding: 20px;
+    list-style-type: none;
+    padding-right: 20px;
+    color: #94a0bb;
+}
+
+.main .header .header-center ul li a {
+    text-decoration: none;
+    color: #94a0bb;
+    margin: 10px;
+}
+
+/* end header  */
+/* start cover */
+.cover-contact .cover-main-contact {
+    background-image: url(../img/conntact-cover.png);
+    width: 100%;
+    height: 480px;
+    position: relative;
+}
+
+/* end cover */
+.form-main-box {
+    width: 100%;
+    height: 300px;
+    background: #fbfbfb;
+    width: 100%;
+}
+
+.form-main-box-top-top {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.form-main-box .form-main-box-top {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form-main-box .form-main-box-top .text-box {
+    display: flex;
+    margin: 2%;
+    width: 50%;
+    height: 30px;
+    border: 1px solid #cacaca;
+    border-radius: 2px;
+    color: #cacaca;
+
+}
+
+.main-area-box {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+.area-box {
+    width: 100%;
+    border: 1px solid #cacaca;
+    border-radius: 2px;
+    color: #cacaca;
+    margin-top: 35px;
+}
+
+.logo-form {
+    width: 75%;
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+
+}
+
+.logo-form-1 {
+    display: flex;
+    color: #cacaca;
+    width: 100%;
+    padding: 10;
+
+}
+
+.butt{
+    width: 100px;
+    height: 30px;
+    background: #39b8c0;
+    border: 1px solid;
+    border-radius: 10px;
+    color: white;
+}
+
+
+
+
+
+@media screen and (max-width: 550px) {
+    .main {
+        display: grid;
+        grid-template-areas:
+            'h h h h h h h h h h h h'
+            'c c c c c c c c c c c c'
+            'o o o o o o o o o o o o'
+            'f f f f f f f f f f f f';
+        gap: 1%;
+    }
+
+    .main .form .from-main .area {
+        width: 50%;
+        margin: 50px;
+    }
+    .form-main-box-top-top {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+}

@@ -1,0 +1,308 @@
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hotel</title>
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/style-index.css">
+    <link rel="stylesheet" href="style/menu.css">
+    <link rel="stylesheet" href="./style/hotel-page.css">
+    <link rel="stylesheet" href="./style/contact.css">
+    <link rel="stylesheet" href="style/all.min.css">
+    <link rel="stylesheet" href="style/fontawesome.min.css">
+
+<body>
+    <div class="container">
+        <div class="main">
+            <!-- start header -->
+            <div class="header">
+                <div class="header-Right">
+                    <img src="./img/logo.png" alt="">
+                </div>
+                <div class="header-center">
+                    <ul>
+                        <li><a href="./hotel-page.html">رزرو هتل</a></li>
+                        <li><a href="./post_page.html">پیگیری رزرو</a></li>
+                        <li><a href="./blog-page..html">وبلاگ</a></li>
+                        <li><a href="./contact_pagee.html">تماس با ما</a></li>
+                    </ul>
+                </div>
+                <label>
+                    <input type='checkbox'>
+                    <span class='menu'> <span class='hamburger'></span> </span>
+                    <ul>
+                        <li><a href="./hotel-page.html">رزرو هتل</a></li>
+                        <li><a href="./post_page.html">پیگیری رزرو</a></li>
+                        <li><a href="./blog-page..html">وبلاگ</a></li>
+                        <li><a href="./contact_pagee.html">تماس با ما</a></li>
+                    </ul>
+                </label>
+                <div>
+                </div>
+                <div class="search">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+            <!-- end header -->
+            <!-- start cover -->
+            <div class="cover-contact">
+                <div class="cover-main-contact">
+                    <div class="main-form-cover">
+                        <div class="form-cover">
+                            <form>
+                                <div class="inputbox-top-cover">
+                                    <div>
+                                        <label class="label-cover" for="city">شهر مورد نظر</label>
+                                        <input class="list-cover" list="cities" name="city" />
+                                        <datalist>
+                                            <option value="اصفهان"></option>
+                                            <option value="تهران"></option>
+                                            <option value="شیراز"></option>
+                                        </datalist>
+                                    </div>
+                                    <div>
+                                        <label class="label-cover" for="hotel-input">هتل مورد نظر</label>
+                                        <input class="list-cover" list="hotels" name="hotel" />
+                                        <datalist>
+                                            <option value="پیروزی"></option>
+                                            <option value="تهران"></option>
+                                            <option value="شیراز"></option>
+                                        </datalist>
+                                    </div>
+                                </div>
+                                <div class="inputbox-top-cover">
+                                    <div class="form-date">
+                                        <label class="label-cover" for="startdate"> تاریخ ورود</label>
+                                        <input class="input-date" type="date" name="date" id="startdate"
+                                            min="2021-19-05" />
+                                        <label class="label-cover" for="enddate" style="opacity: 0"> cfghjddddsc</label>
+                                        <input class="input-date" type="date" name="date" id="enddate" max="2022-19-05"
+                                            class="form-enddate" />
+                                    </div>
+                                    <div>
+                                        <div>
+                                            <button class="form-search-button form-button">جستجو</button>
+                                        </div>
+                                    </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end cover -->
+            <!-- start table-main -->
+            <div class="table-main">
+                <div class="table-main-org">
+                    <!-- start table-main-org-up -->
+                    <div class="table-main-org-up">
+                        <div class="right-ph">
+                            <img src="./img/stars.jpg" alt="stars-rate" />
+                            <p>هتل پارس شرق</p>
+                        </div>
+                        <div class="left-ph">
+                            <i class="fa fa-commenting" aria-hidden="true"></i>
+                            <p>مشاهده نظرات</p>
+                        </div>
+                    </div>
+                    <!-- end table-main-org-up -->
+                    <!-- start hotel-img-detail -->
+                    <div class="hotel-form-main">
+                        <div class="hotel-img">
+                            <img src="./img/hotel pars.jpg" alt="hotel-img" />
+                            <p id="img-label">.: جزییات و تصویر هتل پارس کیش :.</p>
+                        </div>
+                        <div class="hotel-detail-text">
+                            <div class="adress">
+                                <i class="fas fa-map-marker-alt" id="location"></i>
+                                <p>
+                                    آدرس دفتر مرکزی:تهران، خیابان شریعتی، پس از اتوبان جنب
+                                    بانک ملت پلاک 3
+                                </p>
+                            </div>
+                            <div class="room">
+                                <i class="fas fa-clock" id="first-clock"> </i>
+                                <p>ساعت تحویل اتاق : ساعت 13</p>
+                            </div>
+                            <div class="exit-rom">
+                                <i class="fas fa-clock" id="second-clock"></i>
+                                <p>ساعت تخلیه اتاق : ساعت 11</p>
+                            </div>
+                            <div class="airport">
+                                <i class="fa fa-plane" aria-hidden="true" id="plane"></i>
+                                <p>فاصله تا فرودگاه : حدود 45 دقیقه</p>
+                            </div>
+                        </div>
+                        <div class="hotel-icons">
+                            <i class="fa fa-wifi" aria-hidden="true" id="wifi"></i>
+                            <i class="fas fa-utensils" id="spoon"></i>
+                            <i class="fas fa-swimmer" id="swimmer"></i>
+                            <i class="fas fa-dumbbell" id="barbell"></i>
+                        </div>
+
+                    </div>
+                    <div class="first-paragraph">
+                        <i class="fa fa-circle" aria-hidden="true"></i>
+
+                        <p>
+                            وقتی ثروت‌ های بزرگ به دست برخی مردم می‌افتد در پرتو آن نیرومند
+                            می‌شوند و در سایهٔ نیرومندی و ثروت خیال می‌ کنند که می‌توانند در
+                            خارج از وطن خود زندگی نمایند و خوشبخت و سرافراز باشند ولی به زودی
+                            می‌ فهمند که اشتباه کرده‌ اند و عظمت هر ملتی بر روی خرابه‌ های وطن
+                            خودش می‌باشد و بس!
+                        </p>
+                    </div>
+                    <div class="first-paragraph">
+                        <p>
+                            <span>قوانین هتل : </span>
+                            این یک نوشته آزمایشی است که به طراحان و برنامه نویسان کمک میکند تا
+                            این عزیزان با بهره گیری از این نوشته تستی و آزمایشی بتوانند نمونه
+                            تکمیل شده از پروژه و طرح خودشان را به کارفرما نمایش دهند، استفاده
+                            از این متن تستی می تواند سرعت پیشرفت پروژه را افزایش دهد، و طراحان
+                            به جای تایپ و نگارش متن می توانند تنها با یک کپی و پست این متن را
+                            در کادرهای مختلف جایگزین نمائید. این نوشته توسط سایت لورم ایپسوم
+                            فارسی نگاشته شده است.
+                        </p>
+                    </div>
+
+                    <!-- start table -->
+                    <div class="table-container">
+                        <table>
+                            <tr>
+                                <th>نوع اتاق</th>
+                                <th>تخفیف</th>
+                                <th>ظرفیت</th>
+                                <th>نفر اضافه</th>
+                                <th>صبحانه رایگان</th>
+                                <th>شنبه 1 دی</th>
+                                <th>شنبه 1 دی</th>
+                                <th>جمع پرداختی دو شب</th>
+                                <th>تعداد اتاق</th>
+
+                            </tr>
+                            <tr>
+                                <td class="brown-color">یک تخته</td>
+                                <td class="discount">23 %</td>
+                                <td class="brown-color">4</td>
+                                <td class="brown-color">1</td>
+                                <td>
+                                    <i class="fa fa-check check-icon" aria-hidden="true"></i>
+                                </td>
+                                <td class="day">1,200,000</td>
+                                <td class="day">1,300,000</td>
+                                <td class="total">2,500,000</td>
+                                <td>
+                                    <select class="room-num brown-color" name="room-num" id="room-num">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <button class="btn-blue">
+                                        <p>رزرو</p>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="brown-color">یک تخته</td>
+                                <td class="discount">23 %</td>
+                                <td class="brown-color">4</td>
+                                <td class="brown-color">1</td>
+                                <td>
+                                    <i class="fa fa-times not-check" aria-hidden="true"></i>
+                                </td>
+                                <td class="day">1,200,000</td>
+                                <td class="day">1,300,000</td>
+                                <td class="total">2,500,000</td>
+                                <td>
+                                    <select class="room-num brown-color" name="room-num" id="room-num">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <button class="btn-red">
+                                        <p>رزرو</p>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="brown-color">یک تخته</td>
+                                <td class="discount">23 %</td>
+                                <td class="brown-color">4</td>
+                                <td class="brown-color">1</td>
+                                <td>
+                                    <i class="fa fa-check check-icon" aria-hidden="true"></i>
+                                </td>
+                                <td class="day">1,200,000</td>
+                                <td class="day">1,300,000</td>
+                                <td class="total">2,500,000</td>
+                                <td>
+                                    <select class="room-num brown-color" name="room-num" id="room-num">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <button class="btn-blue">
+                                        <p>رزرو</p>
+                                    </button>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end table-main -->
+        <!-- start footer -->
+        <div class="footer">
+            <div class="footer-main">
+                <div class="logo-footer">
+                    <img class="main-logo-footer" src="./img/logo-footer.png" alt="">
+
+                </div>
+                <div class="ph-footer-first">
+                    <div class="ph-footer">
+                        <p>لورم ایپسوم یا طرح‌نما (به انگلیسی: Lorem ipsum) به متنی آزمایشی و بی‌معنی در صنعت
+                            چاپ،
+                            صفحه‌آرایی و طراحی گرافیک گفته می‌شود. طراح گرافیک از این متن به عنوان عنصری از
+                            ترکیب
+                            بندی برای پر کردن صفحه و ارایه اولیه شکل
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <div class="namad">
+                        <img src="./img/namad.png" alt="">
+                    </div>
+                </div>
+                <div class="logo-footer-secend">
+                    <div class="logo-footer-secend-main1">
+                        <i class="fab fa-instagram-square"></i>
+                    </div>
+                    <div class="logo-footer-secend-main2">
+                        <i class="fab fa-twitter-square"></i>
+                    </div>
+                    <div class="logo-footer-secend-main3">
+                        <i class="fab fa-facebook-square"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end footer -->
+    </div>
+    </div>
+    </div>
+</body>
+</html>
